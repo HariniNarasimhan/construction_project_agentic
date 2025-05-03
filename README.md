@@ -49,7 +49,7 @@ source .venv/bin/activate
 
 6. Add the mcp server in the ```mcpServers``` key
     ```json
-    "mcpServers": {
+    {"mcpServers": {
     "building": {
             "command": "uv",
             "env": {
@@ -62,6 +62,7 @@ source .venv/bin/activate
                 "main.py"
             ]
         }
+    }
     }
     ```
 
