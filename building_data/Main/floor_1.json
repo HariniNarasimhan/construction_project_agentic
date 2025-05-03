@@ -1,0 +1,328 @@
+{
+  "rooms": {
+    "Corridor": {
+      "windows": 0,
+      "lights": 14,
+      "adjacent_rooms": [
+        "Office_Room_2",
+        "Office_Room_17",
+        "Office_Room_10",
+        "Office_Room_1",
+        "Office_Room_5",
+        "Meeting_Room_7",
+        "Storage_Room_24",
+        "Technical_Room_23",
+        "Auditorium_3",
+        "Office_Room_11",
+        "Office_Room_16",
+        "Office_Room_12",
+        "Meeting_Room_4",
+        "Office_Room_13",
+        "Office_Room_8",
+        "Office_Room_6",
+        "Office_Room_9",
+        "Corridor_20"
+      ],
+      "doors": [
+        "Office_Room_2",
+        "Office_Room_17",
+        "Office_Room_10",
+        "Office_Room_1",
+        "Office_Room_5",
+        "Meeting_Room_7",
+        "Storage_Room_24",
+        "Auditorium_3",
+        "Office_Room_11",
+        "Office_Room_16",
+        "Office_Room_12",
+        "Meeting_Room_4",
+        "Office_Room_13",
+        "Office_Room_8",
+        "Office_Room_6",
+        "Office_Room_9",
+        "Corridor_20"
+      ]
+    },
+    "Office_Room_2": {
+      "windows": 12,
+      "lights": 12,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_17",
+        "Office_Room_9"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_17": {
+      "windows": 2,
+      "lights": 3,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_2",
+        "Office_Room_10"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_10": {
+      "windows": 2,
+      "lights": 6,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_17",
+        "Office_Room_1"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_1": {
+      "windows": 12,
+      "lights": 15,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_10",
+        "Office_Room_5"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_5": {
+      "windows": 6,
+      "lights": 9,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_1",
+        "Meeting_Room_7"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Meeting_Room_7": {
+      "windows": 6,
+      "lights": 9,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_5",
+        "Storage_Room_24",
+        "Technical_Room_23"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Storage_Room_24": {
+      "windows": 0,
+      "lights": 1,
+      "adjacent_rooms": [
+        "Corridor",
+        "Meeting_Room_7",
+        "Auditorium_3",
+        "Technical_Room_23"
+      ],
+      "doors": [
+        "Auditorium_3"
+      ]
+    },
+    "Technical_Room_23": {
+      "windows": 1,
+      "lights": 0,
+      "adjacent_rooms": [
+        "Storage_Room_24",
+        "Meeting_Room_7",
+        "Auditorium_3"
+      ],
+      "doors": [
+        "Auditorium_3"
+      ]
+    },
+    "Auditorium_3": {
+      "windows": 8,
+      "lights": 12,
+      "adjacent_rooms": [
+        "Corridor",
+        "Storage_Room_24",
+        "Technical_Room_23",
+        "Office_Room_11"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_11": {
+      "windows": 2,
+      "lights": 6,
+      "adjacent_rooms": [
+        "Corridor",
+        "Auditorium_3",
+        "Office_Room_16"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_16": {
+      "windows": 2,
+      "lights": 3,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_11",
+        "Office_Room_12"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_12": {
+      "windows": 2,
+      "lights": 6,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_16",
+        "Meeting_Room_4"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Meeting_Room_4": {
+      "windows": 8,
+      "lights": 12,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_12",
+        "Office_Room_13"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_13": {
+      "windows": 2,
+      "lights": 6,
+      "adjacent_rooms": [
+        "Corridor",
+        "Meeting_Room_4",
+        "Office_Room_8"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_8": {
+      "windows": 6,
+      "lights": 9,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_13",
+        "Office_Room_6"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_6": {
+      "windows": 6,
+      "lights": 9,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_8",
+        "Office_Room_9"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Office_Room_9": {
+      "windows": 1,
+      "lights": 0,
+      "adjacent_rooms": [
+        "Corridor",
+        "Office_Room_6",
+        "Office_Room_2"
+      ],
+      "doors": [
+        "Corridor"
+      ]
+    },
+    "Corridor_20": {
+      "windows": 0,
+      "lights": 2,
+      "adjacent_rooms": [
+        "Corridor",
+        "Kitchen",
+        "HC_Room",
+        "Women's_Room",
+        "Men's_Room"
+      ],
+      "doors": [
+        "Corridor",
+        "Kitchen",
+        "HC_Room",
+        "Women's_Room",
+        "Men's_Room"
+      ]
+    },
+    "Kitchen": {
+      "windows": 1,
+      "lights": 3,
+      "adjacent_rooms": [
+        "Corridor_20",
+        "HC_Room",
+        "Technical_Room_21"
+      ],
+      "doors": [
+        "Corridor_20",
+        "Technical_Room_21"
+      ]
+    },
+    "HC_Room": {
+      "windows": 0,
+      "lights": 1,
+      "adjacent_rooms": [
+        "Corridor_20",
+        "Kitchen",
+        "Technical_Room_21"
+      ],
+      "doors": [
+        "Corridor_20"
+      ]
+    },
+    "Technical_Room_21": {
+      "windows": 0,
+      "lights": 0,
+      "adjacent_rooms": [
+        "Kitchen",
+        "Toilet_22"
+      ],
+      "doors": [
+        "Kitchen"
+      ]
+    },
+    "Men's_Room": {
+      "windows": 0,
+      "lights": 1,
+      "adjacent_rooms": [
+        "Corridor_20"
+      ],
+      "doors": [
+        "Corridor_20"
+      ]
+    },
+    "Women's_Room": {
+      "windows": 0,
+      "lights": 1,
+      "adjacent_rooms": [
+        "Corridor_20"
+      ],
+      "doors": [
+        "Corridor_20"
+      ]
+    }
+  }
+}
