@@ -1,7 +1,5 @@
 # Construction Agent 
 
-![Claude MCP Integration](assets/calude_mcp.png)
-
 A construction agent implementation with MCP tools and UV integration.
 
 ## Prerequisites
@@ -35,16 +33,18 @@ source .venv/bin/activate
 
     <details>
     <summary>MacOS/Linux</summary>
-```bash
+    
+    ```bash
     code ~/Library/Application\ Support/Claude/claude_desktop_config.json
-```
+    ```
     </details>
 
     <details>
     <summary>Windows</summary>
-```bash 
+
+    ```bash 
     code $env:AppData\Claude\claude_desktop_config.json
-```
+    ```
     </details>
 
 6. Add the mcp server in the ```mcpServers``` key
@@ -68,7 +68,7 @@ source .venv/bin/activate
 7. Save the file, and restart Claude for Desktop.
 
 8. You can now see totally of 9 "building" mcp tools in the Claude desktop
-    ![Claude MCP Integration](assets/calude_mcp.png)
 
-    Make sure all the tools are selected to try them
-    ![Claude MCP Integration](assets/tools_list.png)
+![Claude MCP Integration](assets/calude_mcp.png)
+
+![Tools List](assets/tools_list.png)
