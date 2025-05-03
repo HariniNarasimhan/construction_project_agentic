@@ -63,7 +63,7 @@ source .venv/bin/activate
             ]
         }
     }
-```
+    ```
 
 7. Save the file, and restart Claude for Desktop.
 
