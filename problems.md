@@ -7,8 +7,6 @@ layout: default
 
 <ul>
   {% for problem in site.problems %}
-    <li>{{ problem.path }}</li>
-  {% else %}
-    <li>No problems found. Check _config.yml and _problems/ folder.</li>
+    <li><a href="{{ problem.url }}">{{ problem.title }}</a></li>
   {% endfor %}
 </ul>
