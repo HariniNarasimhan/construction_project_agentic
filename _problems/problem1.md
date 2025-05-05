@@ -90,10 +90,10 @@ source .venv/bin/activate
 
 9. You can now see totally of 9 "building" mcp tools in the Claude desktop
 
-![Claude MCP Integration](../assets/calude_mcp.png)
+![Claude MCP Integration](/assets/calude_mcp.png)
 
 You will find the following tools in the app. Make sure all of them are selected
 
-![Tools List](../assets/tools_list.png)
+![Tools List](/assets/tools_list.png)
 
 To know more about the Building MCP server - [Click here](https://harininarasimhan.github.io/construction_project_agentic/mcp_servers/)
