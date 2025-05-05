@@ -35,12 +35,12 @@ The AI meeting agent is designed to:
 
 ### 🧱 Proposed Solution Architecture
 An application deploying infrastructure for a generative AI cross-platform online meeting insights agent. The agent is designed to be compatible with online meeting apps such as Microsoft Teams, Zoom, etc 
-![Post-meeting-architecture](../assets/post-meeting-architecture.png)
+![Post-meeting-architecture](/assets/post-meeting-architecture.png)
 
 
 
 ## 📂 **Document Ingestion & Knowledge Base**
-![Data-ingestion](../assets/data-ingestion.png)
+![Data-ingestion](/assets/data-ingestion.png)
 
 Once the construction project is signed -  the final contract, tenders and bids are uploaded to S3 bucket. This triggers a Lambda function **documents-to-text**
 - **Documents-to-text** - is responsible for fetching the document files from s3 such as pdf, excel and word documents. The content of the files are converted to text using OCR techniques like [Amazon textract](https://aws.amazon.com/textract/) / [Mistral OCR](https://mistral.ai/news/mistral-ocr). These text files are then saved in s3 under processed-files. For every new file created, the object file is pushed to an SQS queue.
@@ -48,7 +48,7 @@ Once the construction project is signed -  the final contract, tenders and bids 
 - **Text-to-embeddings** - Read the processed s3 text files and implements a chunking mechanism to parse the text files and create embedding using models from **Sagemaker jumpstart / Huggingface models** and store these embedding as vector database in **AWS Opensearch service index** (can also use opensource DB like [cromadb](https://www.trychroma.com/). 
 
 ## 🛠️ **Meeting Agent Trigger**
-![Meeting-Agent-Trigger](../assets/email-domain.png)
+![Meeting-Agent-Trigger](/assets/email-domain.png)
 
 Meeting Agent is backed by a mail account with necessary license to schedule and manage meetings.
 To monitor this mail account, a **Event bridge scheduler** is used to trigger the lambda **check-email** which keeps checking the receiving email and if the email is a meeting invite, then the **AI Agent** is triggered with new meeting information.
@@ -58,14 +58,14 @@ The trigger to **AI Agent** would contain the following information.
 * Meeting date and time
 
 ## 🧠 **Agentic Workflow**
-![Agentic-Workflow](../assets/agentic-workflow.png)
+![Agentic-Workflow](/assets/agentic-workflow.png)
 
 We have an AI agent created using **Autogen/Langchain framework** where the prompt engineering is performed with any LLM to integrate with MCP tools. 
 The stakeholders of this construction project can add this agent using it's **email id** and make sure all the access is given for the agent mail id to access meeting contents.
 The Agent will set with **system prompts** to perform the necessary tasks. To interact with Agent, A **FastAPI** WebSocket protocol, initiated via an HTTP GET request with an ```Upgrade: websocket``` header. Once the connection is established, it switches to the WebSocket protocol. This API is hosted using **AWS EKS**.
 
 ## 🛠️ **MCP servers**
-![MCP-Servers](../assets/mcp-servers.png)
+![MCP-Servers](/assets/mcp-servers.png)
 
 The tools created for mcp servers can also be hosted as GET/POST methods using FastAPI depending on the use case. These http urls are connected to Agents to trigger the right tool.
 
@@ -171,7 +171,7 @@ The updated design improves the following areas:
   - Focuses the LLM summarization pipeline only on meaningful project-related conversations.
 
 
-![Architecture](../assets/bonus-architecture.png)
+![Architecture](/assets/bonus-architecture.png)
 
 **Changes made**
 
