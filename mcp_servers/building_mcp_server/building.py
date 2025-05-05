@@ -78,11 +78,14 @@ class Floor:
         if room not in self.rooms:
             raise ValueError(f"Room {room.name} does not exist on this floor")
         
-        # Remove all door connections to this room
+        # Remove all door connections and adjacent room connections to this room
         for other_room in self.rooms:
             if room.name in other_room.doors:
                 other_room.doors.remove(room.name)
+            if room.name in other_room.adjacent_rooms:
+                other_room.adjacent_rooms.remove(room.name)
         
+        # Remove the room from the floor
         self.rooms.remove(room)
 
 class Building:
