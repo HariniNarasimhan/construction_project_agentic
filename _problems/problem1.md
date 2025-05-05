@@ -9,8 +9,6 @@ Designing a simplified floor plan of a construction site — no geometry, no 3D 
 - Navigate from one room to another via doors.
 - Build an MCP server interface that understands natural language instructions like: “Add a door between room 3 and room 7” or “Set the number of lights in room 5 to 3”
 
-This was not just a data modeling problem. It called for integrating agentic capabilities that interpret and manipulate the model using simple, human language.
-
 ## Design
 
 Using Python, I implemented an abstract object model consisting of:
@@ -88,4 +86,8 @@ source .venv/bin/activate
 
 ![Claude MCP Integration](../assets/calude_mcp.png)
 
+You will find the following tools in the app. Make sure all of them are selected
+
 ![Tools List](../assets/tools_list.png)
+
+To know more about the MCP servers  - [Click here](https://harininarasimhan.github.io/construction_project_agentic/mcp_servers/)
