@@ -41,9 +41,15 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync
 source .venv/bin/activate
 ```
-4. Download and install Claude Desktop from http://claude.ai/download
+4. Download and install Claude Desktop from [here](http://claude.ai/download)
 
-5. We'll need to configure Claude for Desktop for whichever MCP servers you want to use. To do this, open your Claude for Desktop App configuration at ~/Library/Application Support/Claude/claude_desktop_config.json in a text editor. Make sure to create the file if it doesn't exist. If you have VS code installed
+5. We'll need to configure Claude for Desktop for whichever MCP servers you want to use. To do this, open your Claude for Desktop App configuration.
+
+    ```bash
+    nano ~/Library/Application Support/Claude/claude_desktop_config.json
+    ```
+
+   Make sure to create the file if it doesn't exist. If you have VS code installed
 
     <details>
     <summary>MacOS/Linux</summary>
@@ -61,7 +67,7 @@ source .venv/bin/activate
     ```
     </details>
 
-6. Add the mcp server in the ```mcpServers``` key
+7. Add the mcp server in the ```mcpServers``` key
     ```json
     {"mcpServers": {
     "building": {
@@ -80,9 +86,9 @@ source .venv/bin/activate
     }
     ```
 
-7. Save the file, and restart Claude for Desktop.
+8. Save the file, and restart Claude for Desktop.
 
-8. You can now see totally of 9 "building" mcp tools in the Claude desktop
+9. You can now see totally of 9 "building" mcp tools in the Claude desktop
 
 ![Claude MCP Integration](../assets/calude_mcp.png)
 
