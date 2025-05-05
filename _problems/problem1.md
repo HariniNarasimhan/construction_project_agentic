@@ -2,7 +2,21 @@
 title: "Problem 1: Abstract Optimization of a Building Floor Plan"
 layout: default
 ---
-A construction agent implementation with MCP tools and UV integration.
+
+## The Challenge
+Designing a simplified floor plan of a construction site — no geometry, no 3D CAD complexity. Just a logical structure made up of Rooms, Doors, and Connections. The challenge was to:
+- Model a building with rooms, doors, windows, and lights.
+- Navigate from one room to another via doors.
+- Build an MCP server interface that understands natural language instructions like: “Add a door between room 3 and room 7” or “Set the number of lights in room 5 to 3”
+
+This was not just a data modeling problem. It called for integrating agentic capabilities that interpret and manipulate the model using simple, human language.
+
+## Design
+
+Using Python, I implemented an abstract object model consisting of:
+* Room: with attributes like name, windows, lights, doors, and adjacent_rooms.
+* Floor: a container for multiple rooms.
+* Building: an abstraction over one or more floors.
 
 ## Prerequisites
 
@@ -72,6 +86,6 @@ source .venv/bin/activate
 
 8. You can now see totally of 9 "building" mcp tools in the Claude desktop
 
-![Claude MCP Integration](assets/calude_mcp.png)
+![Claude MCP Integration](construction_project_agentic/assets/calude_mcp.png)
 
-![Tools List](assets/tools_list.png)
+![Tools List](construction_project_agentic/assets/tools_list.png)
