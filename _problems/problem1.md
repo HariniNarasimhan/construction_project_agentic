@@ -50,22 +50,20 @@ source .venv/bin/activate
     ```
 
    Make sure to create the file if it doesn't exist. If you have VS code installed
-
-    <details>
-        <summary>MacOS/Linux</summary>
-        
-        ```
-        code ~/Library/Application\ Support/Claude/claude_desktop_config.json
-        ```
-    </details>
-
-    <details>
-        <summary>Windows</summary>
-    
-        ```
-        code $env:AppData\Claude\claude_desktop_config.json
-        ```
-    </details>
+   <details>
+       <summary>MacOS/Linux</summary>
+       
+       
+       code ~/Library/Application\ Support/Claude/claude_desktop_config.json
+       
+   </details>
+   <details>
+       <summary>Windows</summary>
+       
+       
+       code $env:AppData\Claude\claude_desktop_config.json
+       
+   </details>
 
 7. Add the mcp server in the ```mcpServers``` key
     ```json
