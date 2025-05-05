@@ -54,7 +54,7 @@ source .venv/bin/activate
     <details>
         <summary>MacOS/Linux</summary>
         
-        ```bash
+        ```
         code ~/Library/Application\ Support/Claude/claude_desktop_config.json
         ```
     </details>
@@ -62,7 +62,7 @@ source .venv/bin/activate
     <details>
         <summary>Windows</summary>
     
-        ```bash 
+        ```
         code $env:AppData\Claude\claude_desktop_config.json
         ```
     </details>
