@@ -1,6 +1,7 @@
 theme: minima
+baseurl: "/construction_project_agentic"
 title: "Construction Project Agentic"
 collections:
   problems:
     output: true
-    permalink: /problems/:name/
+    permalink: "{{ site.baseurl }}/problems/:name/"
