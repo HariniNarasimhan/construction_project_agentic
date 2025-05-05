@@ -1,4 +1,6 @@
 theme: minima
+baseurl: "/construction_project_agentic"
+title: "Construction Project Agentic"
 collections:
   problems:
     output: true
