@@ -14,9 +14,9 @@ This was not just a data modeling problem. It called for integrating agentic cap
 ## Design
 
 Using Python, I implemented an abstract object model consisting of:
-* Room: with attributes like name, windows, lights, doors, and adjacent_rooms.
-* Floor: a container for multiple rooms.
-* Building: an abstraction over one or more floors.
+* ```Room``` with attributes like name, windows, lights, doors, and adjacent_rooms.
+* ```Floor``` a container for multiple rooms.
+* ```Building``` an abstraction over one or more floors.
 
 ## Prerequisites
 
