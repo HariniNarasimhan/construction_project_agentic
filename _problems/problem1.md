@@ -86,6 +86,6 @@ source .venv/bin/activate
 
 8. You can now see totally of 9 "building" mcp tools in the Claude desktop
 
-![Claude MCP Integration](construction_project_agentic/assets/calude_mcp.png)
+![Claude MCP Integration](../assets/calude_mcp.png)
 
-![Tools List](construction_project_agentic/assets/tools_list.png)
+![Tools List](../assets/tools_list.png)
