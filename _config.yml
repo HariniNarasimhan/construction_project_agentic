@@ -2,4 +2,4 @@ theme: minima
 collections:
   problems:
     output: true
-    permalink: /problems/:name/
+    permalink: /_problems/:name/
