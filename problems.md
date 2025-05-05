@@ -7,6 +7,6 @@ layout: default
 
 <ul>
   {% for problem in site.problems %}
-    <li><a href="{{ problem.url }}">{{ problem.title }}</a></li>
+    <li><a href="{{ site.baseurl }}{{ problem.url }}">{{ problem.title }}</a></li>
   {% endfor %}
 </ul>
