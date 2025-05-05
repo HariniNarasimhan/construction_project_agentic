@@ -90,4 +90,4 @@ You will find the following tools in the app. Make sure all of them are selected
 
 ![Tools List](../assets/tools_list.png)
 
-To know more about the MCP servers  - [Click here](https://harininarasimhan.github.io/construction_project_agentic/mcp_servers/)
+To know more about the Building MCP server - [Click here](https://harininarasimhan.github.io/construction_project_agentic/mcp_servers/)
