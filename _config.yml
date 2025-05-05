@@ -1,1 +1,5 @@
 theme: minima
+collections:
+  problems:
+    output: true
+    permalink: /problems/:name/

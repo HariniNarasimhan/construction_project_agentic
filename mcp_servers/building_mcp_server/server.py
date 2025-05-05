@@ -102,7 +102,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="Add_Room",
-            description="Add a room to the building",
+            description="Add a room to the building and also update the adjacent rooms, doors, windows, lights",
             inputSchema=Add_Room.model_json_schema(),
         ),
         Tool(
