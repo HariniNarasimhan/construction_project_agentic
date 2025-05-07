@@ -2,7 +2,7 @@ import os
 import json
 import pytest
 from unittest.mock import patch, MagicMock
-from building.server import (
+from building_mcp_server.server import (
     Read_Building_data,
     Add_Floor,
     Add_Room,

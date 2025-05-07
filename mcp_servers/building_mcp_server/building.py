@@ -1,4 +1,4 @@
-from typing import List, Set, Dict, Optional
+from typing import List, Set, Dict, Optional, Tuple
 from dataclasses import dataclass
 from collections import deque
 import json
@@ -17,7 +17,7 @@ class Room:
     doors: List[str]  # List of room names connected by doors
     windows: int
     lights: int
-    adjacent_rooms: List[str]  # Names of adjacent rooms
+    adjacent_rooms: Tuple[str, ...]  # Names of adjacent rooms
 
     def add_door(self, adjacent_room: 'Room') -> None:
         """Add a door connecting to an adjacent room"""
@@ -83,7 +83,7 @@ class Floor:
             if room.name in other_room.doors:
                 other_room.doors.remove(room.name)
             if room.name in other_room.adjacent_rooms:
-                other_room.adjacent_rooms.remove(room.name)
+                other_room.adjacent_rooms = tuple(adj_room for adj_room in other_room.adjacent_rooms if adj_room != room.name)
         
         # Remove the room from the floor
         self.rooms.remove(room)
